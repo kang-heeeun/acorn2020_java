@@ -10,6 +10,7 @@ public class MainClass08 {
 		char ch=str.charAt(5);
 		//소문자를 모두 대문자로 변환한 문자열 얻어내기 
 		String result=str.toUpperCase();
+		
 	}
 }
 

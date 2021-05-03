@@ -17,6 +17,13 @@ public class MainClass05 {
 		name=null; // name 변수를 empty(빈) 상태로 만들기 
 	}
 }
+/* 1.primitive data type
+ * -byte, short, int, long, float, double, boolean, char
+ * 
+ * 2.reference data type
+ * -string type, 
+ * 
+ */
 
 
 

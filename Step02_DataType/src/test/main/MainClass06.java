@@ -15,6 +15,12 @@ public class MainClass06 {
 		//System.out.println("name1:"+name1);
 		
 		System.out.println("main 메소드가 종료 됩니다.");
+		
+		/*  int num1 = 0;
+		 *  boolean isRun = false;
+		 *  
+		 * 
+		 */
 	}
 }
 
