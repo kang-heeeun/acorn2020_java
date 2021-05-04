@@ -19,7 +19,14 @@ public class Marine {
 		System.out.println("현재 에너지:"+this.energy);
 	}
 }
-
+/* Marine.attackPower;
+ * Marine m1 = new Marine();
+ * m1.energy;
+ * m1.move();
+ * m1.attack();
+ * 
+ * 
+ * */
 
 
 

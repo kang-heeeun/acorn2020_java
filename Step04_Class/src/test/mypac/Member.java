@@ -8,6 +8,7 @@ public class Member {
 	
 	//non static 메소드 정의하기
 	public void showInfo() {
+		int num = 10;
 		System.out.println(this.num+" | "+this.name+" | "+this.addr);
 	}
 }
