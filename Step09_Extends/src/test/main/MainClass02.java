@@ -15,6 +15,7 @@ public class MainClass02 {
 		//p1 에 담긴 참조값을 Object type 지역변수 p4 에 담기 
 		Object p4=p1;
 	}
+	
 }
 
 
