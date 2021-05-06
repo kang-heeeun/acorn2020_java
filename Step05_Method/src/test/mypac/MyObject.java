@@ -57,6 +57,7 @@ public class MyObject {
 	public void doSome(Radio r, Speaker s) {
 		System.out.println("doSome()  메소드가 호출되었습니다.");
 	}
+
 }
 
 

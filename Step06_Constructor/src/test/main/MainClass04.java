@@ -10,6 +10,7 @@ public class MainClass04 {
 		 */
 		//Random 객체를 생성해서 참조값을 지역변수에 담기
 		Random ran=new Random();
+		int a = ran.nextInt();
 		//메소드를 호출하고 리턴되는 값을 지역 변수에 담기
 		int a=ran.nextInt();
 		//콘솔창에 출력해보기
