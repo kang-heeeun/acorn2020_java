@@ -14,3 +14,16 @@ public class MultiPlayer implements Remocon, Drill{
 		System.out.println("온도를 내려요");
 	}
 }
+/*
+ *  Object mp = new MultiPlayer();
+ *  Remocon mp2 = new MultiPlayer();
+ *  Drill mp3 = new MultiPlayer();
+ *  MultiPlayer mp4 = new MultiPlayer();
+ */
+/*
+ * mp. //object에정의된기능
+ * mp2. //Remocon에정의된기능
+ * mp3. //Drill에정의된기능
+ * mp4. //obj, Remocon, Dril, MultiPlayer 에정의된기능
+ * 
+*/

@@ -10,14 +10,13 @@ public class MainClass07 {
 		 *  Weapon 추상 클래스를 상속받은 익명의 local inner class 
 		 *  의 생성자를 호출해서 Weapon type 의 참조값 얻어내서 지역변수 w1 에 담기 
 		 */
-		Weapon w1=new Weapon() {
+		Weapon w1 = new Weapon() { //class name? x extends weapon{} constructor call
 			@Override
 			public void attack() {
 				System.out.println("아무나 공격해요!");
 			}
 		};
-		
-		Weapon w2=new Weapon() {
+		Weapon w2 = new Weapon() {
 			@Override
 			public void attack() {
 				System.out.println("공중 공격을 해요!");
@@ -26,7 +25,7 @@ public class MainClass07 {
 		
 		useWeapon(w1);
 		useWeapon(w2);
-		useWeapon(new Weapon() {
+		useWeapon(new Weapon() { //즉석에서만들어서 전달할수도있다
 			@Override
 			public void attack() {
 				System.out.println("지상 공격을 해요!");

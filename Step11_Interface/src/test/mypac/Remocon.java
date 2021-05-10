@@ -10,11 +10,10 @@ package test.mypac;
  *    객체를 생성해야 한다.
  *  - 클래스 상속은 단일 상속이지만, 인터페이스는 다중 구현이 가능하다 
  */
+//추상메소드만 가져야된다
 public interface Remocon {
-	//필드 (static final 예약어 생략 가능)
-	public static final String COMPANY="LG";
-	//메소드 (abstract 예약어 생략 가능)
-	public abstract void up();
+	public static final String COMPANY="LG"; //(static final 예약어 생략 가능)
+	public abstract void up(); // (abstract 예약어 생략 가능)
 	public abstract void down();
 }
 
