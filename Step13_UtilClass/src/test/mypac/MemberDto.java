@@ -1,6 +1,6 @@
 package test.mypac;
 /*
- *   [ Data Transfer Object ]  or  [ Value Object ]
+ *   [ Data Transfer Object ]  or  [ Value Object ] MemberDto / MemberVo
  *   
  *   객체를 생성할 클래스의 작성법
  *   
@@ -17,16 +17,18 @@ public class MemberDto {
 	private int num;
 	private String name;
 	private String addr;
+	
 	//default 생성자를 정의한다.
 	public MemberDto() {}
-	//모든 필드의 값을 전달받아서 필드에 저장하는 생성자를 정의한다.
+
 	public MemberDto(int num, String name, String addr) {
-		super();
+		super(); //없어도됨 부모생성자
 		this.num = num;
 		this.name = name;
 		this.addr = addr;
 	}
-	//필드에 접근을 할수 있도록 getter, setter 메소드를 만들어 놓는다.
+	//getter - 값을 갖고올때
+	//setter - 값을 넣어줄때
 	public int getNum() {
 		return num;
 	}
@@ -45,6 +47,8 @@ public class MemberDto {
 	public void setAddr(String addr) {
 		this.addr = addr;
 	}
+	
+	
 	
 }
 

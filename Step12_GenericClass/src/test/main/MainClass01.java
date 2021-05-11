@@ -24,7 +24,14 @@ public class MainClass01 {
 		
 	}
 }
-
+/*
+ * List<> list = new ArrayList<>();
+ * 
+ * Generic type
+ * (integer / Double / Boolean / String / Car...)
+ * 
+ * list.get(0).drive();
+ */
 
 
 

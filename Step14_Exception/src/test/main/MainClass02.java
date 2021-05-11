@@ -8,10 +8,11 @@ import java.util.Scanner;
  */
 public class MainClass02 {
 	public static void main(String[] args) {
-		Scanner scan=new Scanner(System.in);
+		Scanner scan=new Scanner(System.in); //Scanner객체
+		//System.in - 키보드 입력값을 읽고 원하는 타입으로 변환해 리턴
 		
 		System.out.println("나눌수 입력:");
-		String inputNum1=scan.nextLine();
+		String inputNum1=scan.nextLine(); //' \n '을 포함하는 한 라인을 읽고 ' \n '을 버린 나머지만 리턴 
 		System.out.println("나누어 지는수 입력:");
 		String inputNum2=scan.nextLine();
 		try {

@@ -17,11 +17,11 @@ public class MainClass04 {
 		cars.add(c1);
 		//3. 반복문 for 문을 이용해서 List 객체에 저장된 모든 Car 객체의 drive() 메소드를
 		//순서대로 호출해 보세요.
-		for(int i=0; i<cars.size(); i++) {
-			Car tmp=cars.get(i);
-			tmp.drive();
-		}
-		System.out.println("확장 for 문을 이용하면");
+//		for(int i=0; i<cars.size(); i++) {
+//			Car tmp=cars.get(i);
+//			tmp.drive();
+//		}
+//		System.out.println("확장 for 문을 이용하면");
 		for(Car tmp:cars) {
 			tmp.drive();
 		}

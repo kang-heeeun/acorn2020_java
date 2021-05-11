@@ -15,7 +15,7 @@ public class MainClass01 {
 		f.setLayout(null);
 		//버튼 객체 생성
 		JButton btn=new JButton("눌러보셈");
-		//버튼의 위치와 크기 지정 
+		//버튼의 위치와  크기 지정 
 		btn.setBounds(10, 10, 100, 40);
 		//프레임에 버튼 추가하기
 		f.add(btn);
@@ -23,7 +23,7 @@ public class MainClass01 {
 		//프레임이 보이도록 한다. 
 		f.setVisible(true);
 		
-		new MyFrame("나만의 프레임");
+		// new MyFrame("나만의 프레임");
 	}
 	
 	public static class MyFrame extends JFrame{

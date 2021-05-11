@@ -8,6 +8,7 @@ import test.mypac.MemberDto;
 public class MainClass07 {
 	public static void main(String[] args) {
 		//default 생성자를 이용해서 객체를 생성한 경우 
+		//객체를 생성해서 메소드로 값을 넣어넣는...(메소드로 접근)
 		MemberDto m1=new MemberDto();
 		m1.setNum(1);
 		m1.setName("김구라");
@@ -42,10 +43,29 @@ public class MainClass07 {
 		//참조 테스트
 		List<MemberDto> a = list;
 		MemberDto b = list.get(0);
+		
+		
 		int c = list.get(0).getNum();
+		//list >>> List type
+		//list.get(0) >>> MemberDto type
+		//list.get(0).getNum() >>> int type
+		
 		String d = list.get(0).getName();
+		//list >>> List type
+		//list.get(0) >>> MemberDto type
+		//list.get(0).getName() >>> String type
+		
 		String e = list.get(0).getAddr();
+		//list >>> List type
+		//list.get(0) >>> MemberDto type
+		//list.get(0).getAddr() >>> String type
+		
+		
 		int f = list.get(0).getName().length();
+		//list >>> List type
+		//list.get(0) >>> MemberDto type
+		//list.get(0).getName() >>> String type
+		//list.get(0).getNum().length() >>> int type //문자열의길이
 	}
 }
 

@@ -22,12 +22,13 @@ public class MainClass13 {
 		Iterator<Integer> it = nums.iterator();
 		// it.hasNext() 는 커서 다음에 읽어낼 데이터가 있는 지 확인해서 있으면 true  를 
 		// 리턴하고 없으면 false 를 리턴한다.
-		while(it.hasNext()) {
+		//반복문 후에 i값이 필요하다면 for문보다 while문이 유용할수있다 
+		//true면 반복 false가 될때까지
+		while(it.hasNext()) { //boolean 
 			//it.next() 는 커서를 한칸 움직여서 커서가 위치한 곳의 데이터를 읽어온다. 
 			int tmp=it.next();
 			System.out.println(tmp);
 		}
-		 
 	}
 }
 

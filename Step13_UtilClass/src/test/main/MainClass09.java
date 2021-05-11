@@ -28,6 +28,7 @@ public class MainClass09 {
 		map3.put("addr", "동물원");
 		
 		List<Map<String, Object>> list=new ArrayList<>();
+		//Map<String, Object> list generic class
 		list.add(map1);
 		list.add(map2);
 		list.add(map3);
@@ -48,11 +49,28 @@ public class MainClass09 {
 		Object c=list.get(0).get("num");
 		Object d=list.get(0).get("name");
 		Object e=list.get(0).get("addr");
+		
 		int f=(int)list.get(0).get("num");
+		// list => List type
+		// list.get(0) => Map type
+		// list.get(0).get("num") => Object type
+		// (int)list.get(0).get("num") => int type
+		
 		String g=(String)list.get(0).get("name");
 		String h=(String)list.get(0).get("addr");
 		
 		int i=((String)list.get(0).get("addr")).length();
+		// list => List
+		// list.get(0) => Map
+		// list.get(0).get("addr") => Object
+		// (String)list.get(0).get("addr") => String
+		// ((String)list.get(0).get("addr")).length() => int
+		
+		String addr = (String)list.get(0).get("addr");
+		//1. list.get(0)
+		//2. list.get(0).get("addr")
+		//3. (String)list.get(0).get("addr")
+		//4. String addr = (String)list.get(0).get("addr")	
 	}
 }
 

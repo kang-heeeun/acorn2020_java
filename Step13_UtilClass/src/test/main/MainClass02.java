@@ -5,7 +5,8 @@ import java.util.ArrayList;
 public class MainClass02 {
 	public static void main(String[] args) {
 		//정수를 저장할수 있는 가변 배열 객체 생성
-		ArrayList<Integer> nums=new ArrayList<Integer>();
+		ArrayList<Integer> nums=new ArrayList<Integer>(); // new ArrayList<생략가능>();
+		
 		nums.add(10);
 		nums.add(20);
 		nums.add(30);

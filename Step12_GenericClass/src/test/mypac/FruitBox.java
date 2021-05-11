@@ -15,3 +15,11 @@ public class FruitBox<T> {
 		return item;
 	}
 }
+/*
+ * FruitBox
+ * FruitBox<T> //클래스안에서 사용하는 어떤타입을 동적으로 전달
+ * 1.필드
+ * 2.메소드의인자
+ * 3.
+ *
+ */

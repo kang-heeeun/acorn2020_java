@@ -12,12 +12,14 @@ public class MainClass03 {
 		System.out.println("main 메소드가 시작 되었습니다.");
 		
 		try {
-			Thread.sleep(5000);
+			//실행의흐름을 5초동안 잡아두는
+			//InterruptedException 발생할가능성이있다
+			//묶어야되는이유 RuntimeException 을 상속 받지 않는 Exception이기 때문
+			Thread.sleep(5000); 
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		
-		File f1=new File("c:/acorn2020/myFolder/test.txt");
+		File f1=new File("c:/acorn202104/myFolder/test.txt");
 		try {
 			f1.createNewFile();
 		} catch (IOException e) {
@@ -27,9 +29,5 @@ public class MainClass03 {
 		System.out.println("main 메소드가 종료 됩니다.");
 	}
 }
-
-
-
-
 
 

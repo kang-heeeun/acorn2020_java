@@ -22,6 +22,8 @@ public class MyFrame extends JFrame{
 		add(sendBtn);
 		add(removeBtn);
 		
+		JOptionPane.showMessageDialog(this, "오잉?");
+		
 		//ActionListener 인터페이스 type  의 참조값 
 		ActionListener listener=new ActionListener() {
 			@Override
