@@ -45,7 +45,7 @@ public class Frame04 extends JFrame implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		//Runnable 인터페이스를 구현한 클래스로 객체 생성
-		Runnable r=new Runnable() {
+		Runnable r=new Runnable() { //익명 클래스 class ? implements Runnable{}
 			@Override
 			public void run() {
 				//run()  메소드 안쪽이 새로운 작업단위가 된다. 

@@ -22,38 +22,38 @@ public class MyFrame extends JFrame implements ActionListener{
 	//default  생성자
 	public MyFrame() {
 		//프레임의 레이아웃 법칙 설정하기 
-		setLayout(new BorderLayout());
+		setLayout(new BorderLayout()); //JPanel으로부터상속받은메소드
 		
 		//JPanel
 		JPanel topPanel=new JPanel();
 		topPanel.setBackground(Color.YELLOW);
 		//Panel 을 북쪽에 배치하기 
-		add(topPanel, BorderLayout.NORTH);
+		add(topPanel, BorderLayout.NORTH); //JPanel으로부터상속받은메소드
 		
 		//JTextField 객체를 만들에서 JPanel 에 추가하기 
 		tf_num1=new JTextField(10);
 		topPanel.add(tf_num1);
 		//기능 버튼 객체를 만들어서 JPanel 에 추가하기
-		JButton plusBtn=new JButton("+");
-		JButton minusBtn=new JButton("-");
-		JButton multiBtn=new JButton("*");
-		JButton divideBtn=new JButton("/");
-		topPanel.add(plusBtn);
+		JButton plusBtn=new JButton("+"); //4
+		JButton minusBtn=new JButton("-"); //5
+		JButton multiBtn=new JButton("*"); //6
+		JButton divideBtn=new JButton("/"); //7
+		topPanel.add(plusBtn); //패널에 메소드 => 패널에추가됨
 		topPanel.add(minusBtn);
 		topPanel.add(multiBtn);
 		topPanel.add(divideBtn);
 		//두번째 JTextField  만들어서 페널에 추가 하기 
-		tf_num2=new JTextField(10);
+		tf_num2=new JTextField(10); //8
 		topPanel.add(tf_num2);
 		//JLabel
-		JLabel label1=new JLabel("=");
-		label_result=new JLabel("0");
+		JLabel label1=new JLabel("="); //9
+		label_result=new JLabel("0"); //10
 		//페널에 레이블 추가하기
 		topPanel.add(label1);
 		topPanel.add(label_result);
 		
 		//버튼에 리스너 등록하기
-		plusBtn.addActionListener(this);
+		plusBtn.addActionListener(this); //인터페이스참조값 myframe을넣음
 		minusBtn.addActionListener(this);
 		multiBtn.addActionListener(this);
 		divideBtn.addActionListener(this);
@@ -86,7 +86,7 @@ public class MyFrame extends JFrame implements ActionListener{
 			double result=0;
 			//눌러진 버튼의 command 읽어오기
 			String command=e.getActionCommand();
-			if(command.equals("plus")) {
+			if(command.equals("plus")) { //자바에서 내용비교할때 동등연산자하면안된다
 				result=num1+num2;
 			}else if(command.equals("minus")) {
 				result=num1-num2;

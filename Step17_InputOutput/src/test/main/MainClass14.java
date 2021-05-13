@@ -13,7 +13,6 @@ public class MainClass14 {
 				System.out.println("파일이 존재 하지 않습니다.");
 				return; //메소드 끝내기 
 			}
-			//파일에서 문자열을 읽어들일 객체
 			FileReader fr=new FileReader(memoFile);
 			BufferedReader br=new BufferedReader(fr);
 			while(true) {

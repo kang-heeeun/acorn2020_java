@@ -10,19 +10,13 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-
-import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
+import javax.swing.JMenu; //상단에 한칸 메뉴바
+import javax.swing.JMenuBar; //상단에 한줄 메뉴바
+import javax.swing.JMenuItem; //메뉴누르면 펼쳐지는 메뉴아이템
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 import javax.swing.JTextArea;
-import javax.swing.UIManager;
-import javax.swing.plaf.metal.MetalLookAndFeel;
-import javax.swing.plaf.metal.OceanTheme;
 
 public class Quiz03 extends JFrame implements ActionListener{
 	//필드
@@ -65,7 +59,7 @@ public class Quiz03 extends JFrame implements ActionListener{
 		mb.add(menu1);
 		mb.add(menu2);
 		//프레임에 메뉴바 장착
-		setJMenuBar(mb);
+		setJMenuBar(mb); // jfream method
 		
 		//텍스트 area 를 프레임의 가운데에 배치 
 		area=new JTextArea();
@@ -90,19 +84,24 @@ public class Quiz03 extends JFrame implements ActionListener{
 			area.setText("");//문자열 삭제
 			area.setVisible(true); //JTextArea 를 보이게 하고 
 			area.grabFocus(); //포커스를 준다. 
+			
+			
 		}else if(command.equals("open")) {// 아이템 Open 을 눌렀을때
-			area.setText("");
-			openContent();
+			area.setText(""); //일단지우고
+			openContent(); //오픈하고
+			
+			
 		}else if(command.equals("save")) {// 아이템 Save 를 눌렀을때 
 			saveContent();
 		}
 	}
 	//파일에 있는 문자열을 읽어와서 출력하는 작업을 하는 메소드
 	public void openContent() {
-		JFileChooser fc=new JFileChooser("c:/acorn2020/myFolder");
+		JFileChooser fc=new JFileChooser("c:/acorn202104/myFolder"); //시작하는위치넣기
 		//파일을 open 하는 다이얼로그 띄우기 
 		int result=fc.showOpenDialog(this);	
-		if(result == JFileChooser.APPROVE_OPTION) {
+		if(result == JFileChooser.APPROVE_OPTION) { //open을누르면 나오는 
+			//APPROVE_OPTION 0
 			// open 할 예정인 파일 객체의 참조값 얻어오기 
 			File file=fc.getSelectedFile();
 			try {
@@ -134,8 +133,10 @@ public class Quiz03 extends JFrame implements ActionListener{
 	public void saveContent() {
 		//JTextArea 에 입력한 문자열을 읽어온다.
 		String content=area.getText();
-		JFileChooser fc=new JFileChooser("c:/acorn2020/myFolder");
-		int result=fc.showSaveDialog(this);	
+		JFileChooser fc=new JFileChooser("c:/acorn202104/myFolder");
+		int result=fc.showSaveDialog(this);
+		// open >> opendialog
+		// save >> savedialog
 		if(result == JFileChooser.APPROVE_OPTION) {
 			//새로 만들 예정인 File 객체 의 참조값 얻어오기 
 			File file =fc.getSelectedFile();

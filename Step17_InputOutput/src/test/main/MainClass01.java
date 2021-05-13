@@ -23,7 +23,20 @@ public class MainClass01 {
 		}
 	}
 }
-
+/*
+ * InputStream //byte
+ * InputStreamReader //String
+ * BufferedReader //String
+ * FileInputStream //byte
+ * FileReader //String
+ */
+/*
+ * OutputStream //byte
+ * OutputStramWriter //String
+ * BufferedWriter //String
+ * FileOutputStream //byte
+ * FileWriter //String 
+ */
 
 
 
