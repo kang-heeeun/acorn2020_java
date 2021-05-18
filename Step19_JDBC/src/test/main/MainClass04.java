@@ -24,7 +24,7 @@ public class MainClass04 {
 			e.printStackTrace();
 		}
 		
-		int num=2;
+		int num=18;
 		String name="원숭이";
 		
 		PreparedStatement pstmt=null;

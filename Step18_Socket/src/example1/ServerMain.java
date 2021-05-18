@@ -9,7 +9,7 @@ public class ServerMain {
 		//필요한 객체를 저장할 지역변수 미리 만들기 
 		ServerSocket serverSocket=null;
 		try {
-			// 5000번 통신 port 을 열고 클라이언트의 접속을 기다린다. 
+			// 5000번 통신 port 을 열고 클라이언트의 접속을 기다린다.  연결만
 			serverSocket=new ServerSocket(5000);
 			/*
 			 *  accept() 메소드는 클라이언트가 실제 접속을 할때 까지 리턴하지 않고
@@ -18,9 +18,9 @@ public class ServerMain {
 			 */
 			while(true) {
 				System.out.println("클라이언트의 Socket 연결 요청을 대기합니다.");
-				Socket socket=serverSocket.accept();
+				Socket socket = serverSocket.accept(); //리턴하지않고 대기중인거
 				System.out.println("클라이언트가 접속을 했습니다.");
-				String clientIp=socket.getInetAddress().getHostAddress();
+				String clientIp = socket.getInetAddress().getHostAddress();
 				System.out.println("접속한 클라이언트의 아이피:"+clientIp);
 				socket.close();
 			}

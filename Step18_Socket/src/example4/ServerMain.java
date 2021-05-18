@@ -70,16 +70,16 @@ public class ServerMain {
 		@Override
 		public void run() {
 			try {
-				String clientIp=socket.getInetAddress().getHostAddress();
+				String clientIp = socket.getInetAddress().getHostAddress();
 				System.out.println("접속한 클라이언트의 아이피:"+clientIp);
 				//클라이언트로 부터 읽어들일 (Input) 객체의 참조값 얻어오기
-				InputStream is=socket.getInputStream();
-				InputStreamReader isr=new InputStreamReader(is);
-				BufferedReader br=new BufferedReader(isr);
+				InputStream is = socket.getInputStream();
+				InputStreamReader isr = new InputStreamReader(is);
+				BufferedReader br = new BufferedReader(isr);
 				
 				//클라이언트에게 출력할수 있는 객체
-				OutputStream os=socket.getOutputStream();
-				OutputStreamWriter osw=new OutputStreamWriter(os);
+				OutputStream os = socket.getOutputStream();
+				OutputStreamWriter osw = new OutputStreamWriter(os);
 				//BufferedWriter 객체의 참조값을 필드에 저장하기 
 				bw=new BufferedWriter(osw);
 				
